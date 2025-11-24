@@ -61,7 +61,8 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 60px;          
+    width: auto;           
     margin-right: 10px;
     filter: sepia(1) saturate(5) hue-rotate(5deg);
 }
@@ -123,10 +124,11 @@ body {
     cursor: pointer;
 }
 
+
 /* Hero Section */
 .hero {
     background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), 
-                url('img/hero-bg.jpg') center/cover no-repeat;
+    url('img/hero-bg.jpg') center/cover no-repeat;
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -174,7 +176,7 @@ body {
 .hero-image {
     flex: 1;
     height: 400px;
-    background: url('img/cliente.jpg') center/cover no-repeat;
+    background: url('../img/cliente.jpg') center/cover no-repeat;
     border-radius: 8px;
     box-shadow: var(--sombra);
     border: var(--borda-dourada);
@@ -260,9 +262,9 @@ body {
 }
 
 .servicos-preview h2 {
-    padding-top: 10px; 
-    font-size: 3rem;   /* aumente o valor como quiser */
-    margin-bottom: 40px; /* opcional, para dar mais espaço */
+    padding-top: 50px; 
+    font-size: 3rem;   /* aumente o valor como quiser /
+    margin-bottom: 40px; / opcional, para dar mais espaço */
 }
 
 .sobre-preview p {
@@ -271,11 +273,14 @@ body {
     color: var(--texto-cinza);
     font-size: 1.2rem;
     line-height: 1.8;
+    text-align: justify;        
+    text-justify: inter-word;   
 }
+
 
 /* CORREÇÃO: Mais espaçamento no botão "Ver todos os serviços" */
 .botao-secundario {
-    margin-top: 40px;   /* aumente até ficar do jeito que quiser */
+    margin-top: 50px;   /* aumente até ficar do jeito que quiser */
     display: inline-block;
     padding: 15px 35px;
     font-size: 1.1rem;
@@ -342,7 +347,7 @@ h3 {
     background-color: var(--preto-claro);
     border: var(--borda-dourada);
     border-radius: 8px;
-    padding: 30px;
+    padding: 40px;
     transition: var(--transicao);
     box-shadow: var(--sombra);
     position: relative;
@@ -363,6 +368,11 @@ h3 {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
+
+.servico {
+    margin-bottom: 50px;
+}
+
 
 .card-servico h3, .servico h3 {
     margin-bottom: 15px;
@@ -391,13 +401,14 @@ h3 {
 
 /* Lista de serviços */
 .lista-servicos {
-    display: grid;
+    margin-bottom: 60px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 40px;
+    
 }
 
-/* CORREÇÃO: Página Sobre com texto maior */
+
 .sobre {
     padding: 60px 0;
      text-align: left;
@@ -415,16 +426,19 @@ h3 {
     color: var(--texto-cinza);
     margin-bottom: 25px;
     max-width: 900px;
+    text-align: justify;        
+    text-justify: inter-word;   
 }
+
 
 .sobre h2 {
     font-size: 2.2rem;
     margin-top: 50px;
     margin-bottom: 25px;
-}
-
-.sobre footer {
-    align-items: center;
+} 
+.sobre h1::after,
+.sobre h1::before {
+    content: none !important;
 }
 
 /* Formulários */
@@ -530,7 +544,6 @@ label input:focus, label select:focus, label textarea:focus {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     margin-top: 40px;
-    align-items: center;
 }
 
 .membro {
@@ -566,11 +579,19 @@ label input:focus, label select:focus, label textarea:focus {
     font-size: 1.1rem;
 }
 
-.site-footer {
+/* =============================
+   FOOTER
+============================= */
+
+.site-footer  {
     background-color: var(--preto-claro);
     border-top: var(--borda-dourada);
     padding: 60px 20px 30px;
     margin-top: 80px;
+}
+
+.site-footer .container {
+    text-align: center;
 }
 
 .footer-container {
@@ -644,6 +665,8 @@ label input:focus, label select:focus, label textarea:focus {
     font-size: 0.95rem;
     margin: 5px 0;
 }
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -750,8 +773,4 @@ label input:focus, label select:focus, label textarea:focus {
     border-radius: 10px;
     opacity: 0.3;
     pointer-events: none;
-}
-.sobre h1::after,
-.sobre h1::before {
-    content: none !important;
 }
