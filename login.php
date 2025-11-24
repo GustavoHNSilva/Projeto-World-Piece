@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['senh
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login — Navalha de Ouro</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
   <main class="container">
@@ -23,5 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['senh
     </form>
     <p>Não tem conta? <a href="cadastro.php">Cadastre-se</a></p>
   </main>
+  <script src="js/main.js"></script>
 </body>
 </html>

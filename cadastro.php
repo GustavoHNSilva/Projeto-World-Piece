@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cadastro — Navalha de Ouro</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
   <main class="container">
@@ -27,5 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <button type="submit" class="botao-principal">Cadastrar</button>
     </form>
   </main>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

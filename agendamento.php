@@ -30,6 +30,7 @@ if (
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Agendamento — Navalha de Ouro</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
   <header class="site-header container header-inner">

@@ -12,6 +12,7 @@ $agendamentos = isset($_SESSION['agendamentos']) ? $_SESSION['agendamentos'] : [
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Painel — Navalha de Ouro</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
   <main class="container">
@@ -28,5 +29,6 @@ $agendamentos = isset($_SESSION['agendamentos']) ? $_SESSION['agendamentos'] : [
       </ul>
     <?php endif; ?>
   </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
